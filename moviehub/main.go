@@ -1,20 +1,19 @@
 package main
 
 import (
-    "context"
-    "log"
-    "net/http"
-    "os"
-    "strings"
-    "time"
+	"context"
+	"log"
+	"net/http"
+	"os"
+	"strings"
+	"time"
 
-    "github.com/jackc/pgx/v5/pgxpool"
-    _ "github.com/joho/godotenv/autoload" // โหลด .env ให้เองถ้ามีไฟล์ (ในเครื่อง) บน Render ไม่มีไฟล์ก็เงียบ
+	"github.com/jackc/pgx/v5/pgxpool"
 
-    "moviehub/auth"
-    "moviehub/handler"
-    "moviehub/mw"
-    "moviehub/store"
+	"moviehub/auth"
+	"moviehub/handler"
+	"moviehub/mw"
+	"moviehub/store"
 )
 
 func main() {
